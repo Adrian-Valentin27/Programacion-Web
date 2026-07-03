@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12 - Conversor de Pesos a Dolares</title>
+    <link rel="stylesheet" href="css/ejercicio11.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Conversor de Pesos(MX) a Dolares</h1>
+
+        <form id="formConversion">
+            <div class="campo">
+                <label for="pesos">Pesos (MX):</label>
+                <input type="text" id="peso" name="pesos" placeholder="Ej: 25">
+            </div>
+
+            <p class="mensaje-error" id="mensajeError"></p>
+
+            <button type="button" class="btn-convertir" id="btnConvertir">Convertir</button>
+
+            <div class="campo">
+                <label for="Dolares">Dolares:</label>
+                <input type="text" id="dolar" name="dolar" readonly>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/ejercicio12.js"></script>
+</body>
+</html>

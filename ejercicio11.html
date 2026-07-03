@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10 - Conversor de Kilometros a Millas</title>
+    <link rel="stylesheet" href="css/ejercicio11.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Conversor de KM a Mi</h1>
+
+        <form id="formConversion">
+            <div class="campo">
+                <label for="kilometro">Kilometros:</label>
+                <input type="text" id="kilometro" name="kilometro" placeholder="Ej: 25">
+            </div>
+
+            <p class="mensaje-error" id="mensajeError"></p>
+
+            <button type="button" class="btn-convertir" id="btnConvertir">Convertir</button>
+
+            <div class="campo">
+                <label for="Millas">Millas:</label>
+                <input type="text" id="Millas" name="Millas" readonly >
+            </div>
+        </form>
+    </div>
+
+    <script src="js/ejercicio11.js"></script>
+</body>
+</html>
