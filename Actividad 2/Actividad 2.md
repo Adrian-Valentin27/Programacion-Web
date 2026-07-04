@@ -33,7 +33,7 @@ Para utilizar esta librería en cualquier proyecto web, simplemente descarga el 
 ## Uso con Ejemplos de Código Embebido
 1. **Validación de Correo electrónico**
 Comprueba si una cadena cumple estrictamente con la estructura estándar de un email mediante expresiones regulares.
-```const correoValido = validarCorreo("usuario@correo.com"); ``` Devuelve: true
+##```const correoValido = validarCorreo("usuario@correo.com"); ``` Devuelve: true
 ```const correoInvalido = validarCorreo("usuario@correo");```    Devuelve: false
 
 2. **Filtro de Solo Letras**
