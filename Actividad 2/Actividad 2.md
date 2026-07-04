@@ -1,4 +1,4 @@
-# 🚀 JS-Utils: Librería Frontend de Validación y Utilería Nativa
+# JS-Utils: Librería Frontend de Validación y Utilería Nativa
 
 | Información del Proyecto | |
 |---|---|
@@ -71,6 +71,33 @@ Devuelve: 26 (entero)
 5. **Verificación de Mayoría de Edad**
 Retorna un valor booleano determinando si la persona tiene 18 años o más a partir de su fecha de nacimiento.
 ```html
-const esMayor = esMayorDeEdad("2012-08-20"); // Devuelve: false
-const esAdulto = esMayorDeEdad("1995-03-10"); // Devuelve: true
+const esMayor = esMayorDeEdad("2012-08-20"); 
+const esAdulto = esMayorDeEdad("1995-03-10"); 
 ```
+
+6. **Validación de Contraseña Robusta**
+Exige requerimientos mínimos de seguridad para proteger cuentas: al menos una letra mayúscula, una minúscula, un número, un carácter especial ($@$!%*?&) y un largo mínimo de 8 caracteres.
+```html
+const passSegura = validarPassword("Admin2026!"); 
+const passDebil = validarPassword("123456");     
+```
+
+7. **Formateo de Moneda (Función de Invención Adicional 1)**
+Transforma cualquier número flotante o entero a un string estructurado bajo el formato internacional de divisa localizado (`Intl.NumberFormat`).
+```html
+const precioDolares = formatearMoneda(1500.50, 'USD'); 
+const precioPesos = formatearMoneda(500, 'MXN');
+```
+
+8. **Capitalización de Texto (Función de Invención Adicional 2)**
+Limpia espacios basura en los extremos y convierte un bloque de texto desordenado o mal escrito a un formato limpio de "Nombre Propio".
+```html
+const nombreLimpio = capitalizarTexto("   aLeXAnDeR pÉrEz   ");
+```
+
+---
+##  Resultados
+<img width="681" height="692" alt="image" src="https://github.com/user-attachments/assets/957147f1-5a2c-4549-bd76-bf8684f85c16" />
+<img width="692" height="216" alt="image" src="https://github.com/user-attachments/assets/0a732840-a4fe-4603-ba4d-c10601eb4902" />
+
+---
