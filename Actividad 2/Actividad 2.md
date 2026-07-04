@@ -99,8 +99,11 @@ const nombreLimpio = capitalizarTexto("   aLeXAnDeR pÉrEz   ");
 ##  Resultados
 A continuación se evidencian las pruebas de caja blanca realizadas directamente en la consola del navegador para comprobar la pureza de las funciones:
 
+
 <img width="681" height="692" alt="image" src="https://github.com/user-attachments/assets/957147f1-5a2c-4549-bd76-bf8684f85c16" />
 <img width="692" height="216" alt="image" src="https://github.com/user-attachments/assets/0a732840-a4fe-4603-ba4d-c10601eb4902" />
+
+
 **Filtros de Seguridad (Pruebas 1, 2, 3 y 6):** Retornan correctamente valores booleanos (`true`/`false`), demostrando que las expresiones regulares procesan los datos y bloquean formatos inválidos.
 * **Manejo de Tiempo (Pruebas 4 y 5):** El cálculo matemático a partir de fechas arroja edades exactas y restringe accesos de manera precisa.
 * **Mejora de UX (Pruebas 7 y 8):** Los datos crudos ingresados son transformados con éxito a formatos limpios para la interfaz visual (texto en modo "Título" y números convertidos a divisa `MXN`).
