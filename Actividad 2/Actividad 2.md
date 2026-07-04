@@ -42,17 +42,25 @@ const correoInvalido = validarCorreo("usuario@correo");
 
 3. **Filtro de Solo Letras**
 Permite únicamente caracteres alfabéticos de la A a la Z, incluyendo espacios y vocales acentuadas o eñes (tanto mayúsculas como minúsculas).
-```const nombreOk = soloLetras("María José Núñez");
+```html
+const nombreOk = soloLetras("María José Núñez");
 ``` 
-```const nombreError = soloLetras("Juan123");
+```html
+const nombreError = soloLetras("Juan123");
 ```       
 
 5. **Validación de Longitud Numérica**
 Verifica que un número (o ID) convertido a texto no supere un límite máximo de dígitos establecidos y que no se encuentre vacío.
-``` const idCorrecto = validarLongitud(992831, 10);```     Devuelve: true (6 dígitos es <= 10)
-``` const idExcedido = validarLongitud(12345678901, 10);```  Devuelve: false (11 dígitos)
+```html
+const idCorrecto = validarLongitud(992831, 10);
+```
+Devuelve: true (6 dígitos es <= 10)
+```html
+const idExcedido = validarLongitud(12345678901, 10);
+```
+Devuelve: false (11 dígitos)
 
-6. **Cálculo de Edad
+7. **Cálculo de Edad
 Retorna los años cumplidos exactos del usuario restando la fecha actual del sistema de la fecha de nacimiento provista en formato `AAAA-MM-DD`.
 Suponiendo el año en curso (2026)
 ```const edad = calcularEdad("2000-05-15");``` Devuelve: 26 (entero)
