@@ -49,7 +49,7 @@ const nombreOk = soloLetras("María José Núñez");
 const nombreError = soloLetras("Juan123");
 ```       
 
-5. **Validación de Longitud Numérica**
+3. **Validación de Longitud Numérica**
 Verifica que un número (o ID) convertido a texto no supere un límite máximo de dígitos establecidos y que no se encuentre vacío.
 ```html
 const idCorrecto = validarLongitud(992831, 10);
@@ -60,7 +60,17 @@ const idExcedido = validarLongitud(12345678901, 10);
 ```
 Devuelve: false (11 dígitos)
 
-7. **Cálculo de Edad
+4. **Cálculo de Edad
 Retorna los años cumplidos exactos del usuario restando la fecha actual del sistema de la fecha de nacimiento provista en formato `AAAA-MM-DD`.
 Suponiendo el año en curso (2026)
-```const edad = calcularEdad("2000-05-15");``` Devuelve: 26 (entero)
+```html
+const edad = calcularEdad("2000-05-15");
+```
+Devuelve: 26 (entero)
+
+5. **Verificación de Mayoría de Edad**
+Retorna un valor booleano determinando si la persona tiene 18 años o más a partir de su fecha de nacimiento.
+```html
+const esMayor = esMayorDeEdad("2012-08-20"); // Devuelve: false
+const esAdulto = esMayorDeEdad("1995-03-10"); // Devuelve: true
+```
