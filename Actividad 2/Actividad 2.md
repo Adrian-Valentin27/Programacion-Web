@@ -33,20 +33,24 @@ Para utilizar esta librería en cualquier proyecto web, simplemente descarga el 
 ## Uso con Ejemplos de Código Embebido
 1. **Validación de Correo electrónico**
 Comprueba si una cadena cumple estrictamente con la estructura estándar de un email mediante expresiones regulares.
-##```const correoValido = validarCorreo("usuario@correo.com"); ``` Devuelve: true
-```const correoInvalido = validarCorreo("usuario@correo");```    Devuelve: false
+```html
+const correoValido = validarCorreo("usuario@correo.com");
+```
+```html
+const correoInvalido = validarCorreo("usuario@correo");
+```
 
-2. **Filtro de Solo Letras**
+3. **Filtro de Solo Letras**
 Permite únicamente caracteres alfabéticos de la A a la Z, incluyendo espacios y vocales acentuadas o eñes (tanto mayúsculas como minúsculas).
 ```const nombreOk = soloLetras("María José Núñez");``` Devuelve: true
 ```const nombreError = soloLetras("Juan123");```       Devuelve: false
 
-3. **Validación de Longitud Numérica**
+4. **Validación de Longitud Numérica**
 Verifica que un número (o ID) convertido a texto no supere un límite máximo de dígitos establecidos y que no se encuentre vacío.
 ``` const idCorrecto = validarLongitud(992831, 10);```     Devuelve: true (6 dígitos es <= 10)
 ``` const idExcedido = validarLongitud(12345678901, 10);```  Devuelve: false (11 dígitos)
 
-4. **Cálculo de Edad
+5. **Cálculo de Edad
 Retorna los años cumplidos exactos del usuario restando la fecha actual del sistema de la fecha de nacimiento provista en formato `AAAA-MM-DD`.
 Suponiendo el año en curso (2026)
 ```const edad = calcularEdad("2000-05-15");``` Devuelve: 26 (entero)
