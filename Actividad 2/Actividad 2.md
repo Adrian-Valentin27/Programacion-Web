@@ -135,6 +135,6 @@ A continuación se evidencian las pruebas de caja blanca realizadas directamente
 
 <div align="center">
 
-**Desarrollado como parte de la materia Programación Web — 7SC**
+**Programación Web — 7SC**
 
 </div>
