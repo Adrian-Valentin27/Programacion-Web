@@ -49,11 +49,12 @@ Para utilizar esta librería, necesitas incluir tanto la hoja de estilos como el
     <script src="actividad3.js"></script>
 </body>
 ```
+---
 
 ## Uso con Ejmplos del Código.
 1 **Notificación con extito.**
 
-Ideal para confirmar que una acción (como guardar un formulario o registro) se completó correctamente. Color verde.
+Ideal para confirmar que una acción (como guardar un formulario o registro) se completó correctamente, es de color verde.
 ```html
 ToastUI.show({
     message: "¡Perfil de usuario actualizado correctamente!",
@@ -61,5 +62,35 @@ ToastUI.show({
     duration: 4000
 });
 ```
+2 **Notificación de Error (error)**
 
+Utilizado para informar al usuario sobre fallos, como validaciones incorrectas o campos vacíos, es de color rojo.
+```html
+ToastUI.show({
+    message: "Error: Todos los campos del formulario son obligatorios.",
+    type: "error",
+    duration: 5000
+});
+```
+3 **Notificación Informativa (info)**
 
+Mensajes neutrales del sistema, como la recepción de nuevos mensajes es de color azul.
+```html
+ToastUI.show({
+    message: "Tienes 1 mensaje nuevo de Soporte Técnico.",
+    type: "info",
+    duration: 3500
+});
+```
+
+4 **Notificación de Advertencia (warning)**
+
+Llama la atención del usuario antes de que ocurra un error (ej. expiración de sesión), es de color amarillo.
+```html
+ToastUI.show({
+    message: "Advertencia: Tu sesión expirará en 2 minutos.",
+    type: "warning",
+    duration: 6000
+});
+```
+---
