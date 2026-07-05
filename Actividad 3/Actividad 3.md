@@ -50,8 +50,9 @@ Para utilizar esta librería, necesitas incluir tanto la hoja de estilos como el
 </body>
 ```
 
-##Uso con Ejmplos del Código.
+## Uso con Ejmplos del Código.
 1 **Notificación con extito.**
+
 Ideal para confirmar que una acción (como guardar un formulario o registro) se completó correctamente. Color verde.
 ```html
 ToastUI.show({
