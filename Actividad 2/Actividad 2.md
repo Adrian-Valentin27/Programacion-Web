@@ -132,9 +132,12 @@ A continuación se evidencian las pruebas de caja blanca realizadas directamente
 |  **Mejora de UX** | 7, 8 | Los datos crudos ingresados son transformados con éxito a formatos limpios para la interfaz visual (texto en modo "Título" y números convertidos a divisa `MXN`). |
 
 ---
+##Link del Video.
+
+---
 
 <div align="center">
 
 **Programación Web — 7SC**
-
+https://youtu.be/Xp6wH_N57Zs
 </div>
