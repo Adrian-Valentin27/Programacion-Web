@@ -103,20 +103,17 @@ ToastUI.show({
 Generado dinámicamente al intentar enviar el formulario con campos vacíos. Interrumpe el flujo y alerta al usuario sobre la validación fallida en tiempo real.
 
 **2. Estado de Éxito y Diseño Adaptativo (`toast-success`)**
-
 <img width="1918" height="863" alt="image" src="https://github.com/user-attachments/assets/d3c03cc1-19d7-4218-990f-1e3e79f7810e" />
 
 Confirma la correcta captura de datos. Esta captura en vista móvil (iPhone/Android) evidencia cómo el componente se adapta al 100% del ancho de la pantalla sin generar desbordamiento horizontal.
 
 
 **3. Estado Informativo (`toast-info`)**
-
 <img width="1918" height="865" alt="image" src="https://github.com/user-attachments/assets/d1a787a5-c68a-4103-8d9b-bed535e6e85b" />
 
 Simulación de un evento externo al formulario (ej. nuevo mensaje de soporte). Demuestra la flexibilidad de la librería para conectarse a cualquier botón o proceso de la interfaz.
 
 **4. Estado de Advertencia (`toast-warning`)**
-
 <img width="1918" height="866" alt="image" src="https://github.com/user-attachments/assets/4459c26d-8cc0-472c-90e5-6a23ddc1db3e" />
 
 Prevención de acciones críticas, como la expiración de la sesión. Para este caso de uso, se parametrizó la función para que el componente dure más tiempo en pantalla antes de desaparecer.
