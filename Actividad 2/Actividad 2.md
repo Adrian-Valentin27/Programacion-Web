@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛠️ JS-Utils
+#  JS-Utils
 ### Librería Frontend de Validación y Utilería Nativa
 
 *Funciones puras en Vanilla JavaScript — sin frameworks, sin dependencias*
@@ -29,7 +29,7 @@
 
 Cuando desarrollamos aplicaciones web, la validación de datos en el cliente suele volverse repetitiva, propensa a errores de formato y dependiente de frameworks pesados que ralentizan la carga del sitio.
 
-**JS-Utils** es una librería funcional micro (Vanilla JS) diseñada para resolver este problema. Ofrece un conjunto de funciones puras e independientes que separan por completo la lógica de negocio de la interfaz visual, permitiendo:
+Esta es una librería funcional micro (Vanilla JS) diseñada para resolver este problema. Ofrece un conjunto de funciones puras e independientes que separan por completo la lógica de negocio de la interfaz visual, permitiendo:
 
 -  **Garantizar la seguridad y el formato estricto** en accesos (Login) y registros mediante el análisis de patrones complejos (Password robusto, Correo, Longitudes).
 -  **Normalizar la experiencia de usuario (UX)** transformando textos desordenados y formateando datos financieros de manera automática antes de enviarlos a una base de datos o API.
