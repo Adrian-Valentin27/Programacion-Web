@@ -1,6 +1,5 @@
 <div align="center">
 
-#  JS-Utils
 ### Librería Frontend de Validación y Utilería Nativa
 
 *Funciones puras en Vanilla JavaScript — sin frameworks, sin dependencias*
