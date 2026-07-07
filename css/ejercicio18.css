@@ -1,0 +1,25 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    border-radius: 16px;
+}
+
+.list-group-item {
+    animation: aparecerElemento 0.25s ease-out forwards;
+}
+
+@keyframes aparecerElemento {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

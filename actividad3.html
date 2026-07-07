@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3: Componentes Visuales</title>
+    <link rel="stylesheet" href="css/actividad3.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            padding: 20px;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+            .btn-submit:hover {
+                background-color: #2980b9;
+            }
+
+        .secondary-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .btn-text {
+            background: none;
+            border: none;
+            color: #7f8c8d;
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 13px;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Actualizar Perfil</h2>
+        <p style="font-size: 13px; color: #666; margin-bottom: 20px;">
+            Completa tus datos. Las validaciones mostrarán notificaciones dinámicas.
+        </p>
+
+        <form id="perfilForm">
+            <div class="input-group">
+                <label>Nombre de Usuario:</label>
+                <input type="text" id="nombreUsuario" placeholder="Ej. Adrian G.">
+            </div>
+            <div class="input-group">
+                <label>Correo Electrónico:</label>
+                <input type="email" id="correoUsuario" placeholder="usuario@correo.com">
+            </div>
+
+            <button type="submit" class="btn-submit">Guardar Cambios</button>
+        </form>
+
+        <div class="secondary-actions">
+            <button type="button" class="btn-text" onclick="simularMensajeNuevo()">Simular nuevo mensaje</button>
+            <button type="button" class="btn-text" onclick="simularCierreSesion()">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <script src="js/actividad3.js"></script>
+
+    <script>
+        document.getElementById('perfilForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Evita que la página se recargue
+
+        const nombre = document.getElementById('nombreUsuario').value;
+        const correo = document.getElementById('correoUsuario').value;
+
+        // Validación: Si hay campos vacíos, mostramos un Toast de Error
+        if (!nombre || !correo) {
+        ToastUI.show({
+        message: "Error: Todos los campos son obligatorios.",
+        type: "error",
+        duration: 4000
+        });
+        return;
+        }
+
+        // Si todo está bien, mostramos un Toast de Éxito
+        ToastUI.show({
+        message: `¡Perfil de ${nombre} actualizado correctamente!`,
+        type: "success",
+        duration: 4000
+        });
+
+        // Limpiamos el formulario
+        this.reset();
+        });
+
+        // Simulaciones extras para demostrar los otros colores del componente
+        function simularMensajeNuevo() {
+        ToastUI.show({
+        message: "Tienes 1 mensaje nuevo de Soporte Técnico.",
+        type: "info",
+        duration: 3500
+        });
+        }
+
+        function simularCierreSesion() {
+        ToastUI.show({
+        message: "Advertencia: Tu sesión expirará en 2 minutos.",
+        type: "warning",
+        duration: 5000
+        });
+        }
+    </script>
+</body>
+</html>

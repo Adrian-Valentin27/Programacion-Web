@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18 - Manipulación del DOM con Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/ejercicio18.css">
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4">
+                        <h1 class="card-title h4 text-center mb-4 text-primary fw-bold">
+                            Lista Dinámica Interactiva
+                        </h1>
+
+                        <div class="input-group mb-4">
+                            <input type="text" id="nuevoElemento" class="form-control" placeholder="Escribe un nuevo elemento..." aria-label="Nuevo elemento">
+                            <button class="btn btn-primary fw-bold" type="button" id="agregarBtn">Agregar</button>
+                        </div>
+
+                        <ul id="lista" class="list-group">
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/ejercicio18.js"></script>
+</body>
+</html>
